@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lavanya's Luxe Dining</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fffaf0;
+      color: #333;
+    }
+    header {
+      background-color: #d97706;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-family: 'Playfair Display', serif;
+    }
+    header h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+    nav {
+      background-color: #fbbf24;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: #333;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .menu-item {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+    .menu-item:hover { transform: scale(1.02); }
+    .menu-item h3 { color: #d97706; margin-bottom: 0.5rem; }
+    .menu-item p { font-size: 0.95rem; margin-bottom: 0.5rem; }
+    .price { font-weight: bold; color: #10b981; }
+    .order-btn {
+      background-color: #d97706;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .order-btn:hover { background-color: #b45309; }
+
+    .about {
+      background-color: #fef3c7;
+      border-radius: 10px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+    .about h2 {
+      font-family: 'Playfair Display', serif;
+      color: #b45309;
+      margin-bottom: 1rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+    .photo-box {
+      background-color: #e5e7eb;
+      height: 150px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: #6b7280;
+    }
+
+    .contact {
+      background-color: #fef3c7;
+      border-radius: 10px;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+    .contact h2 {
+      font-family: 'Playfair Display', serif;
+      color: #b45309;
+      margin-bottom: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #d97706;
+      color: white;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Lavanya's Dining Hall</h1>
+    <p>Curated with love</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="about">
+    <h2>Our Story</h2>
+    <p>
+      Founded by Lavanya in 2025, Luxe Dining is a celebration of flavor, warmth, and creativity. Inspired by the vibrant culture of India and the elegance of fine dining, our restaurant offers a curated menu that blends tradition with innovation. Whether you're here for a cozy meal or a special celebration, we promise an experience that delights every sense.
+    </p>
+  </section>
+
+  <section id="menu">
+    <h2 style="color:#d97706; font-family:'Playfair Display', serif; margin-bottom:1rem;">Our Menu</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <h3>Garlic Bread</h3>
+        <p>Toasted baguette with garlic butter and herbs.</p>
+        <p class="price">₹120</p>
+        <button class="order-btn">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <h3>Paneer Tikka</h3>
+        <p>Grilled cottage cheese cubes marinated in spices.</p>
+        <p class="price">₹180</p>
+        <button class="order-btn">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <h3>Veg Biryani</h3>
+        <p>Fragrant basmati rice with mixed vegetables and spices.</p>
+        <p class="price">₹220</p>
+        <button class="order-btn">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <h3>Masala Dosa</h3>
+        <p>South Indian crepe with spicy potato filling.</p>
+        <p class="price">₹180</p>
+        <button class="order-btn">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <h3>Chocolate Brownie</h3>
+        <p>Rich chocolate brownie served warm with ice cream.</p>
+        <p class="price">₹130</p>
+        <button class="order-btn">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <h3>Cold Coffee</h3>
+        <p>Chilled coffee blended with milk and sugar.</p>
+        <p class="price">₹100</p>
+        <button class="order-btn">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <h3>Rajma Chawal</h3>
+        <p>Full plate serving of rajma with jeera rice.</p>
+        <p class="price">₹200</p>
+        <button class="order-btn">Add to Cart</button>
+      </div>
+    </div>
+   </section>
+
+  <section id="gallery">
+    <h2 style="color:#d97706; font-family:'Playfair Display', serif; margin-bottom:1rem;">Photo Gallery</h2>
+    <div class="gallery">
+      <div class="photo-box">Dish 1</div>
+      <div class="photo-box">Dish 2</div>
+      <div class="photo-box">Interior</div>
+      <div class="photo-box">Chef</div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p><strong>📍 Address:</strong> Dining Hall, Sector 6, Bahadurgarh, Haryana</p>
+    <p><strong>📞 Phone:</strong> +91 98765 43210</p>
+    <p><strong>📧 Email:</strong> lavanya@dininghall.com</p>
+  </section>
+
+  <footer>
+    © 2025 Lavanya’s Dining Hall | Designed with flavor & finesse
+  </footer>
+
+</body>
+</html>
